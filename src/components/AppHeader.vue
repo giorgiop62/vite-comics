@@ -37,13 +37,17 @@ export default {
 <style lang="scss">
 
 header {
-  background-color: yellow;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   ul {
     display: flex;
+    list-style: none;
     li {
       padding: 10px;
       &:hover {
-        background-color: green;
+        background-color: blue;
       }
     }
   }
