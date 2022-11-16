@@ -1,29 +1,34 @@
-<script>
-import AppHeader from './components/AppHeader.vue'
-import AppMain from './components/Appmain.vue';
-import AppFooter from './components/Appfooter.vue';
 
-  export default {
-    name:'App',
-    components:{
-      AppHeader,
-      AppMain,
-      AppFooter
+<script>
+
+import AppHeader from './components/AppHeader.vue';
+import links from './data/menu';
+
+export default {
+  name:'App',
+  components: {
+    AppHeader,
+    
+  },
+  data(){
+    return{
+      links
     }
-  
   }
+
+}
 </script>
 
 
 <template>
-  <AppHeader />
-  <AppMain />
-  <AppFooter />
-
+  <AppHeader :menu="links"/>
   
 </template>
 
 
-<style>
+
+<style lang="scss">
+
+
 
 </style>
